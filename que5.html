@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airplane Reservation</title>
+        <link rel="stylesheet" href="que5.css">
+        <script defer src="que5.js"></script>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Airplane Reservation Form</h1>
+            <br>
+            <br>
+        </div>
+        <form class="airplane">
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Ex: Sitamahalaxmi">
+                <br>
+                <br>
+            
+                <label>Email ID:</label>
+                <input type="text" id="email" placeholder="example@gmail.com">
+                <br>
+                <br>
+        
+                <label>Phone Number: </label>
+                <input type="number" id="phno" placeholder="9940023586">
+                <br>
+                <br>
+
+                <label>Airline:</label>
+                <select id="airline">
+                    <option value="ch">--Choose--</option>
+                    <option value="ai"> Air India</option>
+                    <option value="lf"> Lufthansa</option>
+                    <option value="in"> IndiGo</option>
+                    <option value="sj"> SpiceJet</option>
+                    <option value="em"> Emirates</option>
+                    <option value="oa"> Oman Air</option>
+                    <option value="ja"> Jet Airways</option>
+                    <option value="aa"> Air Asia</option>
+                    <option value="et"> Etihad</option>
+                </select>
+                <br>
+                <br>  
+
+                <label>Destination:</label>
+                <input type="text" id="city" placeholder="Srinagar">
+                <br>
+                <br>
+
+                <label>Date & Time of Departure:</label>
+                <input type="date" id="ddate">
+                <input type="time" id="dtime">
+                <br>
+                <br>
+  
+                <label>Date & Time of Arrival: </label>
+                <input type="date" id="adate">
+                <input type="time" id="atime">
+                <br>
+                <br>
+
+                <label>Number of Passengers:</label>
+                <input type="number" id="nop" placeholder="3">
+                <br>
+                <br>
+
+                <label>Aadhaar Card No.:</label>
+                <input type="number" id="adno" placeholder="XXXX XXXX XXXX 2387">
+                <br>
+                <br>
+
+                <label>Identity proof:</label>
+                <input type="file" id="idproof">
+                <br>
+                <br>
+
+            <div class="buttons">
+                <input type="submit" onclick="validation()" >
+                <input type="reset" value="Reset" name="Reset" >
+            </div>
+        </form>
+    </body>
+</html>
